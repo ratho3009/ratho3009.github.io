@@ -52,11 +52,23 @@ a:hover {
     margin-left: -0.5em; 
 }
     
+.index-paragraphs{
+    max-width: 70%;
+    margin: 0 auto;
+}
 
-.index-articles {
+.index-article {
     margin-left: 1.2em;
-
 } 
+
+.image-info-container {
+    text-align: left; /* Align text to the left */
+    margin-left: auto;
+    font-size: 0.8em;
+    max-width: 85%;
+    color: #a4a1a1;
+}
+
 
 .index-article img {
     display: block; /**/ 
@@ -64,29 +76,20 @@ a:hover {
     max-width: 70%;
 }
 
-footer {
-    text-align: center; 
-    background-color: var(--navbar);
-    display: flex;
-    justify-content: space-around; /* Add this line for equal spacing */
-    padding: 1em; /* Add padding for better spacing */
-}
 
 @media (max-width: 700px) {
     footer {
         flex-direction: column;
         align-items: center;
+
     }
 
     .list-container-footer,
     .adress-container-footer {
-        margin: 1em;
+        margin: 0;
+        padding: 0;
     }
 
-    nav{
-        /* display: flex; */
-        /* height: 4em; */
-    }
     .meny-items{
         display: flex;
         flex-direction: column;
@@ -113,19 +116,34 @@ footer {
         height: 2em;
         width: auto;
     }
+
+    .index-paragraphs{
+        max-width: 90%;
+    }
+
+    .index-article img {
+        max-width: 90%;
+    }
 }
 
 #burger-toggle{
     display: none;
 }
 
+footer {
+    text-align: center; 
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-around; /* Equal spacing */
+    padding: 1em; 
+}
+
 .list-container-footer,
 .adress-container-footer {
-    border: solid 1px black;
     margin: 1em;
     text-align: left;
     vertical-align: top;
-    padding: 1em; /* Add padding for better spacing */
+    padding: 1em; 
 }
 
 .adress-container-footer a{
@@ -232,4 +250,30 @@ summary::-webkit-details-marker {
 
 /* Css til topical, sorterer etterpå */
 
+/* Css til Klatrevegg */
 
+#lighthouse_topical {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#utviklerverktøy{
+    max-width: 50%;
+    height: auto;
+    display: block;
+   border: 5px black;
+}
+
+#lighthouse{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    border: 5px black;
+}
+
+.bildetekst{
+    font-size: 0.8125rem;
+    color: rgb(201, 149, 53);
+}
