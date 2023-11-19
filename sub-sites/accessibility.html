@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +13,98 @@
         <nav>
             <img src="../media/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png" alt="Bilde av OsloMet sin logo">
             <ul class="meny-items">
-                <li><a href="index.html">Hjemme</a></li>
-                <li>Tilgjenglighet</li>
-                <li>Topic1</li>
+                <li><a href="../index.html">Hjemme</a></li>
+                <li><a href="accessibility.html">Tilgjenglighet</a></li>
+                <li><a href="topical.html">Topical</a></li>
                 <li>Topic2</li>
                 <li>Topic3</li>
             </ul>
         </nav>
     </header>
 
-<main>
-    <h1 class="h1-accecibility"> tilgjengelighet</h1>
+
+
+
+
+
+<main class="accessibility_main">
+    <h1> Tilgjengelighet</h1>
+    <p>Tilgjengelighet refererer til praksisen med å designe og utvikle nettsider som kan tas i bruk av personer med ulike evner, inkludert
+        de med funksjonshemninger. Web-tilgjengelighet skal sørge for å fjerne hindringer og tilby en åpen digitalisering som er tilgjengelig for alle.
+    </p>
+
+    <p>For å teste tilgjengeligheten til HTML og CSS, er det viktig å følge retningslinjene for tilgjengelighet av webinhold (WCAG).
+        Disse prinsippene inkluderer blandt annet håndterbarhet, forståelighet og robusthet. Alle prinsippene sørger for spesifikke aspekter av brukerinteraksjon og opplevelse,
+        og hjelper utviklere med å skape innhold og utforming som er tilgjengelig for alle.
+    </p>
+
+    <em>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."</em>
+    <sub class="access_quote">- Tim Berners-Lee, W3C Direktør og oppfinneren av World Wide Web</sub>
+
+    <details>
+        <summary> Les mer om WCAG og tilgjengelighet</summary>
+        <div class="wcag_read_more">
+            <ul>
+            <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86"><li>WCAG: Tilsynet for universell utforming av ikt</li></a>
+            <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"><li>WCAG: The World Wide Web Consortium</li></a>
+            <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"><li>Introduction to Web Accessibility W3C</li></a>
+            </ul>
+        </div>
+    </details>
+
+    <h2>Viktige aspekter av HTML og CSS tilgjengelighet</h2>
+    <h4>Alternativ tekst for bilder</h4>
+    <p>Bilder er et viktig element i webdesign, men de kan være problematiske for brukere med synshemninger. Bruk av alternativ tekst
+        vil kunne hjelpe dem med å gi en forståelse av bildet ved hjelp av skjermlesere.
+    </p>
+    <h4>HTML-elementer</h4>
+    <p>Riktig bruk av overskrifter, lister og skjemaelementer er essesielt for å enkelt kunne navigere nettsiden.</p>
+    <h4>Fargekontrast</h4>
+    <p>Det er viktig å sørge for at tekst og bakgrunnsfarger har nok kontrast til å være lesbare for brukere med synshemninger.</p>
+    <h4>Responsivt design</h4>
+    <p>CSS er avgjørende for å skape responsivt design som tilpasser seg ulike skjermstørreslser.
+        Testing bør sikre at utforming og innhold justeres på riktig måte for ulike enheter.
+    </p>
+
 <h2>Testing av tilgjengelighet</h2>
 <p>Lighthouse er et automatisert testvertøy, som hjelper utviklere med å bedømme tilgjengelighet, ytelse og optimalisering av utvikleren sine nettsider.
     Dette vises som en score fra 0 til 100, der høyere verdier tilsvarer at nettsiden gjør det bedre på de gitte verdiene.
-    Tilgjengelighetstesten til Lighthouse identifiserer elementer som kan påvirke brukere folk med ulike funksjonshemninger.
+    Tilgjengelighetstesten til Lighthouse identifiserer elementer som kan påvirke brukere med ulike funksjonshemninger.
 </p>
 <p>
     Lighthouse testen finner man under utviklerverktøy på Google. 
 </p>
 <img id ="utviklerverktøy" src="../media/Utviklerverktoy.jpg" alt="trykk på de tre dottene i chrome, så på flere verktøy, og så på utviklerverktøy">
-<p class="bildetekst"> Trykk på de tre dottene i Google chrome, så på "flere verktøy", og så på "utviklerverktøy"</p>
+<sub class="access_img_text"> Trykk på de tre dottene i Google chrome, så på "flere verktøy", og så på "utviklerverktøy"</sub>
 <img id="lighthouse" src="../media/lighthouse.jpg" alt="trykk på de to pilene, og til slutt trykk på Lighthouse">
-<p class="bildetekst"> Trykk på de to pilene, og til slutt trykk på "Lighthouse"</p>
-<h2>Resultat av Lighthouse test</h2>
+<sub class="access_img_text"> Trykk på de to pilene, og til slutt trykk på "Lighthouse"</sub>
+<h4>Resultat av Lighthouse test</h4>
 <p>Under ligger bilder av Lighthouse testen.</p>
 <img id="lighthouse_topical" src="../media/lighthouse_topical.jpg" alt="skjermbilde av Lighthouse på topical siden">
+<img id="lighthouse_topical" src="../media/lighthouse_score.jpg" alt="skjermbilde av feil funnet av Lighthouse">
 
-<h3>Kodevalg for å bedre tilgjengelighet</h3>
-<p>Vi valgte å mikse mellom svg og jpg filer på bildene, for å sørge for så god ytelse som mulig.</p>
+<p>Som vi ser på på lighthouse testen av topical siden, har vi fått en god score. 
+    Det vi har fått trekk i på tilgjengelighet gjelder for liten kontrast mellom balgrunnsfarge og bildetekst.
+
+</p>
+
+<h2>Kodevalg for å bedre tilgjengelighet</h2>
+
+<p>Vi valgte å hovedsakelig bruke SVG og JPG filer på bildene for å få så god ytelse som mulig.
+     Disse filene er av mindre filstørrelse enn PNG, og gjør dermed siden enklere å laste opp. 
+    I tillegg har vi laget bildetekst i andre farger enn hovedteksten, for å enkelt kunne se forskjeld på tekst og bildetekst.
+    </p>
+
+
+<p>Et annet kode-valg vi har gjort er å holde css siden på engelsk.
+     Dette gjør at den vil være mer tilgjengelig dersom en som ikke forstår norsk skulle jobbet med siden. </p>
 </main>
+
+
+
+
+
+
 <footer>
     <div class="adress-container-footer">
         <img src="../media/logo-footer.svg" alt="Bilde av tekst logoen til OsloMet">

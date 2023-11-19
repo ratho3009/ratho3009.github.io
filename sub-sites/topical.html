@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="icon" href="../media/favicon.ico">
     <title>topical</title>
-    
 </head>
-<body>
+<body> <!---->
+    <!-- Header element containing navigation and branding -->
   <header>
     <nav>
-        <img src="../media/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png" alt="Bilde av OsloMet sin logo" >
-        <ul class="meny-items">
+        <img src="../media/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png" alt="Bilde av OsloMet sin logo" > 
+        <input type="checkbox" id="burger-toggle">
+        <label class="burger-menu" for="burger-toggle"> <!-- This is a label fo when we click the hamburger menu -->
+            <div class="menu-icon"></div>
+        </label>
+        <ul class="menu-items"> <!-- A list with links for the different menu items  -->
             <li><a href="../index.html">Hjemme</a></li>
             <li>Tilgjenglighet</li>
-            <li>Topic1</li>
-            <li>Topic2</li>
-            <li>Topic3</li>
+            <li><a href="topical.html">Topical</a></li>
+            <li>Kantina</li>
+            <li>Klatrevegg</li>
         </ul>
     </nav>
 </header>
@@ -26,7 +30,7 @@
         <h1 class="topical-h1">Fake news og kritisk tenkning i den digitale æraen</h1>
         <h2>Hvordan Kunstig Intelligens kan brukes til å lure deg</h2>
         <p class="topical-text-author">Skrevet av: Zlatan Ronaldo - 15.11.23</p>
-        <img id="ai-chip" src="../media/ai-wallpaper.webp" alt="En 3D-illustrasjon av en mikrobrikke med bokstavene 'AI' på, som representerer kunstig intelligens, satt mot en bakgrunn av et neonlysende kretskort med glødende rosa og blå linjer."> <!-- https://www.istockphoto.com/photo/ai-microprocessor-on-motherboard-computer-circuit-gm1345658982-423662467  -->
+        <div class="center-image"><img id="ai-chip" src="../media/ai-wallpaper.webp" alt="En 3D-illustrasjon av en mikrobrikke med bokstavene 'AI' på, som representerer kunstig intelligens, satt mot en bakgrunn av et neonlysende kretskort med glødende rosa og blå linjer."></div> <!-- https://www.istockphoto.com/photo/ai-microprocessor-on-motherboard-computer-circuit-gm1345658982-423662467  -->
         <p class="topical-text-author">Foto: Black_Kira / IStock</p>
         <hr>
         <h3>Kunstig Intelligens: Etiske Betraktninger og Samfunnsmessige Utfordringer</h3>
@@ -36,7 +40,7 @@
                 Et eksempel på dette er hvordan KI har blitt brukt til å spre falske bilder, ofte kalt deepfakes. Deepfakes kan for eksempel fabrikkere scenarioer med offentlige figurer.
                 Et kjent eksempel på dette var de falske bildene som viste Donald Trump blir arrestert av politiet. De falske bildene ble spredd av store medier, som trodde at bildene var ekte. Her ser vi bildene:
             </p>
-            <img id="deepfake-trump" src="../media/trump.jpg" alt="Et KI generert bilde av Donald trump som blir arrestert av politet på åpen gate"> <!--https://twitter.com/EliotHiggins/status/1637927681734987777?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1637927681734987777%7Ctwgr%5E97b6b9d455f3ef921250f337dcaa97de0fe50517%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.indiatoday.in%2Ftrending-news%2Fstory%2Fdonald-trump-is-under-arrest-at-least-according-to-these-viral-ai-images-2350077-2023-03-22-->
+            <div class="center-image"><img src="../media/trump.jpeg" alt="Et KI generert bilde av Donald trump som blir arrestert av politet på åpen gate"></div> <!--https://twitter.com/EliotHiggins/status/1637927681734987777?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1637927681734987777%7Ctwgr%5E97b6b9d455f3ef921250f337dcaa97de0fe50517%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.indiatoday.in%2Ftrending-news%2Fstory%2Fdonald-trump-is-under-arrest-at-least-according-to-these-viral-ai-images-2350077-2023-03-22-->
             <p class="topical-text-author">Foto: Eliot Higgin´s Twitter</p>
             <h3>Kunstig Intellegens og Stemme-etterliknig</h3>
             <p>
@@ -64,21 +68,19 @@
             Det er dessuten et kontroversielt forslag å "forby" all bruk av kunstig intelligens. Med tanke på at kunstig intelligens er forventet å integreres dypt i samfunnet i årene som kommer, ville det være uklokt å forby all bruk av KI, inkludert de aspekter av teknologien som kan anses som "skadelige," som generering av falske bilder, videoer og lydopptak.
         </p>
 
-        <img id="ai-face-scan" src="../media/deepFakes.jpeg" alt="Bilde av et fjes som blir skannet av en datamaskin"> <!--https://www.timeforkids.com/g56/fakeout-2/-->
+        <div class="center-image"><img id="ai-face-scan" src="../media/deepFakes.jpeg" alt="Bilde av et fjes som blir skannet av en datamaskin"> </div> <!--https://www.timeforkids.com/g56/fakeout-2/-->
 
         <p class="topical-text-author">Foto: Stephen Blue / Time for Kids</p>
        
         
-        <details>
+        <details class="dropdown-box"> <!-- Expandable box with links for further reading about the future of AI  -->
             <summary>Nettsider for videre lesning rundt framtiden av KI</summary>
-            <div class="info-box">
               <ul>
                 <a href="https://www.digdir.no/kunstig-intelligens/ki-ressurser/4145"><li>Digdir</li></a>
                 <a href="https://snl.no/kunstig_intelligens"><li>Store Norske Leksikon</li></a>
                 <a href="https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/?ch=3"><li>Regjeringen</li></a>
                 <a href="https://www.nho.no/tema/digitalisering/artikler/kunstig-intelligens/"><li>Næringslivets Hovedorganisasjon</li></a>
               </ul>
-            </div>
           </details>
         <hr>
         <h3>Forfatter</h3>
