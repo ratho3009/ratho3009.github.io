@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility</title>
+    <meta name ="description" content="Tilgjengelighet for html og css">
+    <title>Tilgjengelighet</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="icon" type="image/ico" href="media/favicon.ico">
 </head>
 
-<body>
-    <header>
+<body> <!-- This is the body-->
+    <header> <!-- Header containing navigation and branding-->
         <nav>
-            <img src="../media/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png" alt="Bilde av OsloMet sin logo">
-            <ul class="meny-items">
+            <img src="../media/header-img.png" alt="Bilde av OsloMet sin logo" > <!--Logo in header-->
+            <input type="checkbox" id="burger-toggle">
+            <label class="burger-menu" for="burger-toggle"> <!-- This is a label for when we click the hamburger menu -->
+                <div class="menu-icon"></div>
+            </label>
+            <ul class="menu-items"> <!-- A list with links for the different menu items  -->
                 <li><a href="../index.html">Hjemme</a></li>
-                <li><a href="accessibility.html">Tilgjenglighet</a></li>
+                <li><a href="accessibility.html">Tilgjengelighet</a></li>
                 <li><a href="topical.html">Topical</a></li>
-                <li>Topic2</li>
-                <li>Topic3</li>
+                <li><a href="kantina.html"> Kantina</a></li>
+                <li><a href="klatrevegg.html">Klatrevegg</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +32,7 @@
 
 
 
-<main class="accessibility_main">
+<main class="accessibility-main"> <!-- Contains the info for the accessibility page-->
     <h1> Tilgjengelighet</h1>
     <p>Tilgjengelighet refererer til praksisen med å designe og utvikle nettsider som kan tas i bruk av personer med ulike evner, inkludert
         de med funksjonshemninger. Web-tilgjengelighet skal sørge for å fjerne hindringer og tilby en åpen digitalisering som er tilgjengelig for alle.
@@ -38,18 +43,16 @@
         og hjelper utviklere med å skape innhold og utforming som er tilgjengelig for alle.
     </p>
 
-    <em>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."</em>
-    <sub class="access_quote">- Tim Berners-Lee, W3C Direktør og oppfinneren av World Wide Web</sub>
+    <em>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."</em> <!--Quote by Tim Berners-Lee-->
+    <sub>- Tim Berners-Lee, W3C Direktør og oppfinneren av World Wide Web</sub>
 
-    <details>
+    <details class="dropdown-box"> <!-- Expandable menu for links and relevant info -->
         <summary> Les mer om WCAG og tilgjengelighet</summary>
-        <div class="wcag_read_more">
             <ul>
             <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86"><li>WCAG: Tilsynet for universell utforming av ikt</li></a>
             <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"><li>WCAG: The World Wide Web Consortium</li></a>
             <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"><li>Introduction to Web Accessibility W3C</li></a>
             </ul>
-        </div>
     </details>
 
     <h2>Viktige aspekter av HTML og CSS tilgjengelighet</h2>
@@ -74,14 +77,16 @@
 <p>
     Lighthouse testen finner man under utviklerverktøy på Google. 
 </p>
-<img id ="utviklerverktøy" src="../media/Utviklerverktoy.jpg" alt="trykk på de tre dottene i chrome, så på flere verktøy, og så på utviklerverktøy">
-<sub class="access_img_text"> Trykk på de tre dottene i Google chrome, så på "flere verktøy", og så på "utviklerverktøy"</sub>
-<img id="lighthouse" src="../media/lighthouse.jpg" alt="trykk på de to pilene, og til slutt trykk på Lighthouse">
-<sub class="access_img_text"> Trykk på de to pilene, og til slutt trykk på "Lighthouse"</sub>
-<h4>Resultat av Lighthouse test</h4>
+<!-- Navigate lighthouse images-->
+<img class ="access-img" src="../media/utviklerverktoy.jpg" alt="skjermbilde utviklerverktøy">
+<sub class="access-img-text"> Trykk på de tre dottene i Google chrome, så på "flere verktøy", og så på "utviklerverktøy"</sub> <!--image text with different font size and color than the other text-->
+<img class="access-img" src="../media/lighthouse.jpg" alt="skjermbilde av hvor man finner lighthouse">
+<sub class="access-img-text"> Trykk på de to pilene, og til slutt trykk på "Lighthouse"</sub>
+<h2>Resultat av Lighthouse test</h2>
 <p>Under ligger bilder av Lighthouse testen.</p>
-<img id="lighthouse_topical" src="../media/lighthouse_topical.jpg" alt="skjermbilde av Lighthouse på topical siden">
-<img id="lighthouse_topical" src="../media/lighthouse_score.jpg" alt="skjermbilde av feil funnet av Lighthouse">
+<!--Lighthouse test images-->
+<img class="access-img" src="../media/lighthouse-topical.jpg" alt="skjermbilde av Lighthouse på topical siden">
+<img class="access-img" src="../media/lighthouse-score.jpg" alt="skjermbilde av feil funnet av Lighthouse">
 
 <p>Som vi ser på på lighthouse testen av topical siden, har vi fått en god score. 
     Det vi har fått trekk i på tilgjengelighet gjelder for liten kontrast mellom balgrunnsfarge og bildetekst.
@@ -98,6 +103,8 @@
 
 <p>Et annet kode-valg vi har gjort er å holde css siden på engelsk.
      Dette gjør at den vil være mer tilgjengelig dersom en som ikke forstår norsk skulle jobbet med siden. </p>
+     <img class="access-img" src="../media/code.jpg" alt="Engelske klasser og engelske kommentarer på kode."> 
+     <sum class="access-img-text">Bilder er hovedsakelig JPG og SVG filer, og kode og kommentarer på engelsk.</sum>
 </main>
 
 
@@ -105,9 +112,9 @@
 
 
 
-<footer>
+<footer> <!--Footer containing adress, links and contact information-->
     <div class="adress-container-footer">
-        <img src="../media/logo-footer.svg" alt="Bilde av tekst logoen til OsloMet">
+        <img src="../media/logo-footer.svg" alt="Bilde av tekst logoen til OsloMet"> <!--logo in footer-->
         <p>Postboks 4, St. Olavs plass</p>
         
         <p>0130 Oslo</p>
